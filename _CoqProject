@@ -1,0 +1,5 @@
+-Q . elpi.apps.derive.mathcomp
+
+eqbP.v
+test.v
+std.v

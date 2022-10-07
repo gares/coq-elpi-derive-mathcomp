@@ -2,6 +2,7 @@
 fullname: Coq-Elpi's derive for MathComp
 shortname: elpi-derive-mathcomp
 organization: gares
+branch: main
 community: false
 action: true
 

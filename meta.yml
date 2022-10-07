@@ -44,7 +44,7 @@ dependencies:
     name: coq-elpi
     version: '{(>= "1.16") | (= "dev")}'
   description: |-
-    [Coq-Elpi](https://github.com/LPCIC/coq-elpi)
+    [Coq-Elpi](https://github.com/LPCIC/coq-elpi) >= 1.16
 
 tested_coq_opam_versions:
 - version: 'dev'
@@ -62,6 +62,8 @@ categories:
 - name: Computer Science/Data Types and Data Structures
 
 documentation: |-
+  ## Usage
+
   ```coq
   From elpi.apps Require Import derive.mathcomp.std.
 

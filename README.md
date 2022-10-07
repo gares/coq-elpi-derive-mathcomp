@@ -24,7 +24,7 @@ structures of the Mathematical Components library.
 - Compatible Coq versions: 8.16 or later
 - Additional dependencies:
   - [MathComp](https://math-comp.github.io)
-  - [Coq-Elpi](https://github.com/LPCIC/coq-elpi)
+  - [Coq-Elpi](https://github.com/LPCIC/coq-elpi) >= 1.16
 - Coq namespace: `elpi.apps.derive.mathcomp`
 - Related publication(s): none
 
@@ -47,6 +47,8 @@ make   # or make -j <number-of-cores-on-your-machine>
 make install
 ```
 
+
+## Usage
 
 ```coq
 From elpi.apps Require Import derive.mathcomp.std.

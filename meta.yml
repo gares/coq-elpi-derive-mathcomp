@@ -1,12 +1,12 @@
 ---
-fullname: Coq-Elpi's deride for MathComp
+fullname: Coq-Elpi's derive for MathComp
 shortname: elpi-derive-mathcomp
 organization: gares
 community: false
 action: true
 
 synopsis: >-
-  Coq-Elpi's deride for MathComp
+  Coq-Elpi's derive for MathComp
 
 description: |-
   This package links the derivations in `elpi.apps.derive` to

@@ -2,7 +2,7 @@
 This file was generated from `meta.yml`, please do not edit manually.
 Follow the instructions on https://github.com/coq-community/templates to regenerate.
 --->
-# Coq-Elpi's deride for MathComp
+# Coq-Elpi's derive for MathComp
 
 [![Docker CI][docker-action-shield]][docker-action-link]
 
@@ -30,7 +30,7 @@ structures of the Mathematical Components library.
 
 ## Building and installation instructions
 
-The easiest way to install the latest released version of Coq-Elpi's deride for MathComp
+The easiest way to install the latest released version of Coq-Elpi's derive for MathComp
 is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell

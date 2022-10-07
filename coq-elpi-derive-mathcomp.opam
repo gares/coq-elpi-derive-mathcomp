@@ -10,7 +10,7 @@ dev-repo: "git+https://github.com/gares/elpi-derive-mathcomp.git"
 bug-reports: "https://github.com/gares/elpi-derive-mathcomp/issues"
 license: "MIT"
 
-synopsis: "Coq-Elpi's deride for MathComp"
+synopsis: "Coq-Elpi's derive for MathComp"
 description: """
 This package links the derivations in `elpi.apps.derive` to
 structures of the Mathematical Components library."""

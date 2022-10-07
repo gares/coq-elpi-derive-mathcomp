@@ -1,0 +1,35 @@
+# This file was generated from `meta.yml`, please do not edit manually.
+# Follow the instructions on https://github.com/coq-community/templates to regenerate.
+
+opam-version: "2.0"
+maintainer: "Enrico.Tassi@inria.fr"
+version: "dev"
+
+homepage: "https://github.com/gares/elpi-derive-mathcomp"
+dev-repo: "git+https://github.com/gares/elpi-derive-mathcomp.git"
+bug-reports: "https://github.com/gares/elpi-derive-mathcomp/issues"
+license: "MIT"
+
+synopsis: "Coq-Elpi's deride for MathComp"
+description: """
+This package links the derivations in `elpi.apps.derive` to
+structures of the Mathematical Components library."""
+
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+depends: [
+  "coq" {(>= "8.16") | (= "dev")}
+  "coq-mathcomp-ssreflect" {(>= "1.15") | (= "dev")}
+  "coq-elpi" {(>= "1.16") | (= "dev")}
+]
+
+tags: [
+  "category:Computer Science/Data Types and Data Structures"
+  "keyword:synthesis"
+  "keyword:eqType"
+  "logpath:elpi.apps.derive.mathcomp"
+]
+authors: [
+  "Enrico Tassi"
+  "Jean-Christophe Lechenet"
+]

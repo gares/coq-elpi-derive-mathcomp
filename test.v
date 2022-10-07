@@ -1,4 +1,4 @@
-From elpi.apps.derive.mathcomp Require Import std.
+From elpi.apps Require Import derive.mathcomp.std.
 
 From mathcomp Require Import ssreflect ssrbool ssrfun eqtype.
 

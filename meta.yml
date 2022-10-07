@@ -1,0 +1,74 @@
+---
+fullname: Coq-Elpi's deride for MathComp
+shortname: elpi-derive-mathcomp
+organization: gares
+community: false
+action: true
+
+synopsis: >-
+  Coq-Elpi's deride for MathComp
+
+description: |-
+  This package links the derivations in `elpi.apps.derive` to
+  structures of the Mathematical Components library.
+
+authors:
+- name: Enrico Tassi
+  initial: true
+- name: Jean-Christophe Lechenet
+  initial: true
+
+maintainers:
+- name: Enrico Tassi
+  nickname: gares
+
+opam-file-maintainer: Enrico.Tassi@inria.fr
+
+opam-file-version: dev
+
+license:
+  fullname: MIT
+  identifier: MIT
+
+supported_coq_versions:
+  text: 8.16 or later
+  opam: '{(>= "8.16") | (= "dev")}'
+
+dependencies:
+- opam:
+    name: coq-mathcomp-ssreflect
+    version: '{(>= "1.15") | (= "dev")}'
+  description: |-
+    [MathComp](https://math-comp.github.io)
+- opam:
+    name: coq-elpi
+    version: '{(>= "1.16") | (= "dev")}'
+  description: |-
+    [Coq-Elpi](https://github.com/LPCIC/coq-elpi)
+
+tested_coq_opam_versions:
+- version: 'dev'
+- version: '8.16'
+
+ci_cron_schedule: '10 1 * * 0'
+
+namespace: elpi.apps.derive.mathcomp
+
+keywords:
+- name: synthesis
+- name: eqType
+
+categories:
+- name: Computer Science/Data Types and Data Structures
+
+documentation: |-
+  ```coq
+  From elpi.apps Require Import derive.mathcomp.std.
+
+  From mathcomp Require Import ssrbool ssrfun eqtype.
+
+  #[only(eqType)] derive nat.
+
+  Check forall x : nat, x == x.
+  ```
+---
